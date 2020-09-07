@@ -58,8 +58,6 @@ app.post("/register",function(req,res){
       if(error) throw error;
       res.render("secrets")
     })
-
-
   })
 })
 
@@ -83,7 +81,8 @@ app.post("/login",function(req,res){
   })
 })
 
-// listen on port 3000
+// Start and listen on port 3000
 app.listen(3000, function(){
   console.log("Serve running on port 3000");
 })
+
